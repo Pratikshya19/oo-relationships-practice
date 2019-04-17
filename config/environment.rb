@@ -4,17 +4,17 @@ require_all 'app'
 
 
 
-P1 = Passenger.new("PP")
-P2 = Passenger.new("Vidhi")
+c1 = Client.new("PP")
+c2 = Client.new("Vidhi")
 
 
-D1 = Driver.new("Sam")
-D2 = Driver.new("Luis")
-D3 = Driver.new("Nathan")
+t1 = Trainer.new("Sam")
+t2 = Trainer.new("Luis")
+t3 = Trainer.new("Nathan")
 
 
-R1 = Ride.new(P1, D1, 5)
-R2 = Ride.new(P1, D2, 10)
-R3 = Ride.new(P2, D3, 108)
+l1 = Location.new(c1, t1)
+l2 = Location.new(c2, t2)
+l3 = Location.new(c3, t3)
 binding.pry
 0
